@@ -145,15 +145,16 @@ article::before {
 
 .prod-img {
   /* float: left; */
-  width: 260px;
+  width: 255px;
+  height: 100%;
 }
 
 .mid-box {
   /* float: left; */
-  width: 295px;
+  /* width: 295px; */
   /* border: 1px solid red; */
   padding: 20px;
-
+  flex: 1;
 }
 
 /* .clearfix::after {
@@ -164,9 +165,10 @@ article::before {
 
 .right-box {
   /* float: right; */
-  width: 260px;
+  /* width: 260px; */
   padding: 20px;
   /* border: 1px solid purple; */
+  flex: 1;
 }
 
 .detail {
@@ -175,6 +177,8 @@ article::before {
 
 .row {
   display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
 }
 
 .top-mid-box {
