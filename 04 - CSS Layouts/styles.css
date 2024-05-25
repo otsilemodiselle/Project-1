@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
@@ -108,8 +109,13 @@ li:last-child {
   font-weight: bold;
 }
 
+.related-ul {
+  margin-left: 0;
+}
+
 .related-posts-list-item {
   list-style: none;
+  margin-left: 0;
 }
 
 aside {
@@ -203,6 +209,11 @@ h2::after {
   color: black;
 }
 
+.related {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
 /* p::first-line {
   color: red;
 } */
@@ -246,6 +257,8 @@ aside {
   /* background-color: red; */
   width: 300px;
   float: right;
+  padding: 50px 40px;
+
 }
 
 footer {
