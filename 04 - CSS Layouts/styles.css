@@ -19,11 +19,18 @@ nav {
 }
 
 .container {
-  width: 1300px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
   position: relative;
+}
+
+.mid-container {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: start;
 }
 
 .main-header {
@@ -94,6 +101,7 @@ li:last-child {
 #author {
   font-style: italic;
   font-size: 18px;
+  margin-bottom: 0px;
 }
 
 /* footer p {
@@ -105,8 +113,17 @@ li:last-child {
 }
 
 .related-author {
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0;
+  font-size: italic;
+}
+
+.related-link:link {
+  font-size: 17px;
   font-weight: bold;
+  font-style: normal;
+  display: block;
 }
 
 .related-ul {
@@ -122,10 +139,10 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
-  padding: 50px 50px;
-  width: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* padding: 50px; */
+  /* width: 500px; */
 }
 
 li:first-child{
@@ -170,7 +187,6 @@ a:active {
 
 nav a:link {
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -218,6 +234,11 @@ h2::after {
   color: red;
 } */
 
+
+
+/* 
+FLOATS
+
 .author-img {
   float: left;
   margin-bottom: 20px;
@@ -237,9 +258,9 @@ nav {
   float: right;
 }
 
-/* .clear {
+.clear {
   clear: both;
-} */
+}
 
 .clearfix::after {
   clear: both;
@@ -248,13 +269,13 @@ nav {
 }
 
 article {
-  /* background-color: green; */
+  background-color: green;
   width: 825px;
   float: left;
 }
 
 aside {
-  /* background-color: red; */
+  background-color: red;
   width: 300px;
   float: right;
   padding: 50px 40px;
@@ -262,6 +283,45 @@ aside {
 }
 
 footer {
-  /* background-color: yellow; */
+  background-color: yellow;
   clear: both;
+} */
+
+/* FLEXBOX */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.related-posts-list-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 30px;
+}
+
+/* Defaults
+        flex-grow: 0; 0 - items can't grow to fill space, 1 - yes, 2 doubles
+        flex-shrink: 1; 1 - yes items can be shrunk to fit container, 0 no
+        flex-basis: auto; */
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex: 0 0 300px;
+}
+
+
+
