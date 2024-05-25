@@ -74,18 +74,18 @@ button:hover {
 
 .price {
   font-size: 24px;
-  margin-bottom: 20px;
-  float: left;
+  /* margin-bottom: 20px; */
+  /* float: left; */
 }
 
 .shipping {
   color: #444;
   text-transform: uppercase;
-  margin-bottom: 10px;
-  float: right;
+  /* margin-bottom: 10px; */
+  /* float: right; */
   font-weight: bold;
   font-size: 13px;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .color-list {
@@ -144,26 +144,26 @@ article::before {
 }
 
 .prod-img {
-  float: left;
+  /* float: left; */
   width: 260px;
 }
 
 .mid-box {
-  float: left;
+  /* float: left; */
   width: 295px;
   /* border: 1px solid red; */
   padding: 20px;
 
 }
 
-.clearfix::after {
+/* .clearfix::after {
   content: '';
   clear: both;
   display: block;
-}
+} */
 
 .right-box {
-  float: right;
+  /* float: right; */
   width: 260px;
   padding: 20px;
   /* border: 1px solid purple; */
@@ -172,4 +172,15 @@ article::before {
 .detail {
   line-height: 1.6;
 }
+
+.row {
+  display: flex;
+}
+
+.top-mid-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 
