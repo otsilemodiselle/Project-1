@@ -1,3 +1,41 @@
+/* 
+--- 01 TYPOGRAPHY
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHTS
+
+Default: 400
+
+- LINE HEIGHTS
+
+--- 02 COLORS
+
+- PRIMARY: #e67e22
+
+- TINTS:
+- SHADES
+- GREYS: #555
+
+--- 03 ICONS
+
+--- 04 IMAGES
+
+- FACES: UI Faces
+- OTHERS: Unsplash
+
+--- 05 SHADOWS
+
+--- 06 BORDER-RADIUS
+
+--- 07 WHITESPACE
+
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
 * {
   padding: 0;
   margin: 0;
