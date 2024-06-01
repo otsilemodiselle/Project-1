@@ -7,8 +7,15 @@
 - FONT WEIGHTS
 
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - LINE HEIGHTS
+
+Defaults: 1
+Small: 1.05
+Paragraph Default: 1.6
 
 --- 02 COLORS
 
@@ -114,20 +121,64 @@ body {
 }
 
 /* **************************************************** */
-/* HERO SECTION */
+/* HEADER SECTION */
 /* **************************************************** */
 
 .header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fdf2e9;
+
+  /* We specify a header height to make it sticky later */
+  height: 9.6rem;
+  padding: 4.8rem 0 9.6rem 0;
 }
+
 .logo {
-  height: 2.4rem;
+  height: 2.2rem;
 }
 
 /* **************************************************** */
-/* HEADER SECTION */
+/* NAVIGATION */
+/* **************************************************** */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.9rem;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* **************************************************** */
+/* HERO SECTION */
 /* **************************************************** */
 
 .section-hero {
@@ -140,6 +191,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
+  padding: 0 3.2rem;
   gap: 9.6rem;
   align-items: center;
 }
