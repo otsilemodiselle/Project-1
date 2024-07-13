@@ -1,3 +1,23 @@
+console.log("Hello world!");
+
+const myName = "Otsile Modiselle";
+const h1 = document.querySelector(".heading-primary");
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+
+console.log(myName);
+console.log(h1);
+console.log(currentYear);
+
+yearEl.textContent = currentYear;
+
+// h1.addEventListener('click', function() {
+//   h1.textContent = myName;
+//   h1.style.backgroundColor = "blue";
+//   h1.style.padding = "5rem";
+// }) 
+
+
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
