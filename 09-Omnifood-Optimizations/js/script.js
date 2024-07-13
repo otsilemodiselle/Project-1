@@ -2,14 +2,8 @@ console.log("Hello world!");
 
 const myName = "Otsile Modiselle";
 const h1 = document.querySelector(".heading-primary");
-const yearEl = document.querySelector(".year");
-const currentYear = new Date().getFullYear();
-
 console.log(myName);
 console.log(h1);
-console.log(currentYear);
-
-yearEl.textContent = currentYear;
 
 // h1.addEventListener('click', function() {
 //   h1.textContent = myName;
@@ -17,6 +11,24 @@ yearEl.textContent = currentYear;
 //   h1.style.padding = "5rem";
 // }) 
 
+// set current year on copyright 
+const yearEl = document.querySelector(".year");
+const currentYear = new Date().getFullYear();
+yearEl.textContent = currentYear;
+
+///////////////////////////////////////////////////////////
+// Make mobile navigation work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header")
+
+btnNavEl.addEventListener('click', function(){
+  headerEl.classList.toggle('nav-open');
+})
+
+("nav-open");
+
+///////////////////////////////////////////////////////////
 
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
